@@ -1,0 +1,54 @@
+﻿@model  SwapWeb.Products.Models.ProductsViewModel
+@{
+    ViewBag.Title = "Shopin A Ecommerce Category Flat Bootstrap Responsive Website Template | Products :: w3layouts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="product">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="mid-popular">
+
+                @foreach (var item in Model.Products)
+                {
+                    <div class="col-md-4 item-grid1 simpleCart_shelfItem">
+                        <div class=" mid-pop">
+                            <div class="pro-img">
+                                <img src="@item.ImageUrl" class="img-responsive" alt="">
+                                <div class="zoom-icon ">
+                                    <a href="@item.ImageUrl" rel="title"><i class="glyphicon glyphicon-search icon "></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+                                </div>
+                            </div>
+                            <div class="mid-1">
+                                <div class="women">
+                                    <div class="women-top">
+                                        <span>@item.Category.ToString()</span>
+                                        <h6><a href="#">@item.ShortDescription</a></h6>
+                                    </div>
+                                    <div class="img item_add">
+                                        <a data-id="@item.Id" class="btn_add" href="#"><img src="~/Content/images/ca.png" alt=""></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="mid-2">
+                                    <p><em class="item_price">@string.Format("{0:C}", item.Price)</em></p>
+                                    <div class="block">
+                                        <div class="starbox small ghosting"> </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
