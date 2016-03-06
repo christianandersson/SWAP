@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapWeb", "ReactWeb\SwapWeb.csproj", "{C4CA8E35-5C79-4EA5-9E0E-C0ADA176959C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapWeb", "Shop\SwapWeb.csproj", "{C4CA8E35-5C79-4EA5-9E0E-C0ADA176959C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
